@@ -30,8 +30,8 @@ jobs:
       
     - run: npm install
 
-    - name: Start the server in the background
-      run : npm start & 
+    - name: Start the test server
+      run : npm run start:test &
     
     - name: Run the tests
       run: npm test
