@@ -1,4 +1,4 @@
 #!/bin/bash
 yum update 
-curl -sL https://rpm.nodesource.com/setup_23.x | bash -
+curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 yum install -y nodejs
