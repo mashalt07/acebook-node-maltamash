@@ -5,7 +5,7 @@ on:
     branches: [ feature/adding-workflow ]
 
 jobs:
-  build:
+  build_and_push:
     
     runs-on: ubuntu-latest
 
