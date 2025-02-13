@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ feature/adding-workflow ]
+    branches: [ main ]
 
 jobs:
   build_and_push:
