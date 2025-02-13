@@ -2,6 +2,8 @@
 yum update 
 curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 yum install -y nodejs
+yum install openssl10
+yum install openssl10-libs
 cat > /etc/yum.repos.d/mongodb-org-6.0.repo <<EOL
 [mongodb-org-6.0]
 name=MongoDB Repository
