@@ -3,3 +3,8 @@ os: linux
 files:
   - source: ./
     destination: /home/ec2-user/acebook/
+hooks:
+  BeforeInstall:
+    - location: scripts/install-dependencies
+      timeout: 300
+      runas: root
