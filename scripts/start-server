@@ -1,4 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/acebook
+# Install dependencies
 npm install
+# Start Node server in the background
 npm start > /dev/null 2>&1 &
