@@ -1,2 +1,4 @@
 #!/bin/bash
-pwd
+cd /home/ec2-user/acebook
+npm install
+npm start
