@@ -43,5 +43,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-west-2
       
-    - name: Push deployment to S3
+    - name: Push revision to S3
       run: aws deploy push --application-name maltamash-acebook --s3-location s3://maltamash-acebook/maltamash-acebook.zip --ignore-hidden-files --source .
+
+    - name: Create a deployment
+      run: aws deploy create-deployment --application-name maltamash-acebook --deployment-group-name production --s3-location bucket=maltamash-acebook,key=maltamash-acebook.zip,bundleType=zip
